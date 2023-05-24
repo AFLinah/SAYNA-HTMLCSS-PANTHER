@@ -1,0 +1,23 @@
+/*  Import du typographie Wakanda 
+    font-family: 'wakanda-regular', sans-serif; */
+@import url('https://www.dafontfree.net/embed/d2FrYW5kYS1yZWd1bGFyJmRhdGEvMTUyOC93LzE3MTc5Ny9XYWthbmRhLnR0Zg');
+
+/* Import du typographie Cantarell*/
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+/* Import du typographie Panthera */
+@font-face {
+    font-family: 'Panthera';
+    src: url('../Assets/typographie/Panthera/PantheraRegular-MVZ9J.ttf') format('ttf'),
+         url('../Assets/typographie/Panthera/dafonttop.com.url') format('url');
+}
+
+/* Import du typographie Beyno */
+@font-face {
+    font-family: 'Beyno';
+    src: url('../Assets/typographie/Beyno/BEYNO.otf') format('otf')
+}
+
+img{
+    background-color: red;
+}
