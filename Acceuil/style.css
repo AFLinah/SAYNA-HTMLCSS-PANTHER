@@ -1,6 +1,10 @@
-/*  Import du typographie Wakanda 
-    font-family: 'wakanda-regular', sans-serif; */
-@import url('https://www.dafontfree.net/embed/d2FrYW5kYS1yZWd1bGFyJmRhdGEvMTUyOC93LzE3MTc5Ny9XYWthbmRhLnR0Zg');
+/*  Import du typographie Wakanda  */
+@font-face {
+    font-family: 'Wakanda';
+    src: url('../Assets/typographie/Wakanda/WakandaForever-Regular.ttf') format('ttf');
+}
+
+/* @import url('https://www.dafontfree.net/embed/d2FrYW5kYS1yZWd1bGFyJmRhdGEvMTUyOC93LzE3MTc5Ny9XYWthbmRhLnR0Zg'); */
 
 /* Import du typographie Cantarell*/
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
@@ -8,16 +12,376 @@
 /* Import du typographie Panthera */
 @font-face {
     font-family: 'Panthera';
-    src: url('../Assets/typographie/Panthera/PantheraRegular-MVZ9J.ttf') format('ttf'),
-         url('../Assets/typographie/Panthera/dafonttop.com.url') format('url');
+    src: url('../Assets/typographie/Panthera/PantheraRegular-MVZ9J.ttf') format('ttf');
 }
 
 /* Import du typographie Beyno */
 @font-face {
     font-family: 'Beyno';
-    src: url('../Assets/typographie/Beyno/BEYNO.otf') format('otf')
+    src: url('../Assets/typographie/BEYNO/BEYNO.ttf') format('ttf')
 }
 
-img{
-    background-color: red;
+:root{
+    --white-color: #FFFFFF;
+    --light-pink-color: #F2CEF2;
+    --grey-color: #9E91B7;
+    --pink-color: #DF99F2;
+    --blue-color: #3D2DA6;
+    --dark-blue-color: #07338C;
+    --black-color: #021740;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Panthera';
+    color: var(--grey-color);
+    font-size: 68px;
+    font-weight: 400;
+}
+
+h2{
+    font-family: 'Beyno';
+    font-size: 32px;
+    color: var(--grey-color);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Cantarell';
+    font-weight: 300;
+}
+
+body .text{
+    font-family: 'Cantarell';
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px; 
+    width: 80%;
+}
+
+/* Style pour la navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul a{
+    font-family: 'Beyno';
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    color: var(--grey-color);
+}
+
+/* Style pour les icon de scroll */
+.scroll{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 5%;
+    top: 40%;
+}
+
+.scroll img{
+    margin-top: 15px;
+}
+
+/* Style pour la partie en-tete hero */
+#hero .container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+#hero .container .title{
+    margin: 20px 0;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+#hero .container h2.wakanda-forever{
+    font-family: 'Wakanda';
+    font-size: 43px;
+    color: var(--grey-color);
+    font-weight: 300;
+    margin-bottom: 26px;
+}
+
+#hero .container a{
+    color: var(--white-color);
+}
+
+#hero .container div{
+    margin-top: 100px;
+}
+
+#hero .container img{
+    width: 900px;
+}
+
+/* Style pour la section personnage */
+#personnage{
+    margin-top: 40px;
+}
+
+#personnage .character{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    padding-bottom: 80px;
+}
+
+#personnage .character .info{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#personnage .character .info .text{
+    width: 100%;
+    text-align: initial;
+}
+
+#personnage .character a{
+    color: var(--white-color);
+}
+
+/* Style pour la section description */
+#description{
+    display: flex;
+    margin-left: 160px;
+}
+
+#description .citation{
+    font-family: 'Cantarell';
+    font-size: 14px;
+}
+
+#description .tchalla-info{
+    color: var(--black-color);
+    background-color: var(--white-color);
+    width: 420px;
+    border-radius: 10px;
+    height: 500px;
+    padding: 40px;
+    padding-top: 20px;
+    text-align: justify;
+}
+
+#description .tchalla-info h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#description .tchalla-info button{
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    margin-right: 15px;
+    border-radius: 3px;
+    margin-bottom: 25px;
+    padding: 6px;
+}
+
+#description .tchalla-info .text{
+    max-width: 100%;
+}
+
+#description .tchalla-info .bold{
+    font-weight: bold;
+}
+
+#description .tchalla-info .fine{
+    font-size: 14px;
+}
+
+/* Style pour la section contact */
+#contact{
+    background-image: url(../Assets/Accueil-img/Pantherhome7.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#contact .form{
+    height: 600px;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 120px;
+    margin-left: 80px;
+    border-radius: 140px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+}
+
+#contact .form .text{
+    text-align: center;
+    color: var(--black-color);
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+#contact .form h2{
+    text-align: center;
+    color: var(--black-color);
+    text-transform: unset;
+    font-family: 'Cantarell';
+    font-weight: bold;  
+}
+
+#contact .form input, textarea{
+    display: block;
+    border-radius: 38px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 520px;
+    background: none;
+    border: 1px solid;
+}
+
+#contact .form input{
+    height: 56px;
+}
+
+#contact .form textarea{
+    height: 200px;
+}
+
+#contact .form button{
+    display: block;
+    border-radius: 38px;
+    margin: 10px auto;
+    padding: 15px;
+    width: 174px;
+    height: 54px;
+    background-color: var(--light-pink-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+#contact .form button:hover{
+    box-shadow: 0 0 20px #021740;
+    cursor: pointer;
+}
+
+/* Style pour la partie footer */
+#footer .container{
+    display: flex;
+    margin: 60px auto 50px;
+}
+
+#footer .img-buble{
+    margin-right: 100px;
+}
+
+#footer .info{
+    margin-right: 40px;
+}
+
+#footer .page{
+    letter-spacing: 28%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#footer .apropos, .wakanda{
+    margin: 6px auto;
+}
+
+#footer .footer-content{
+    display: flex;
+}
+
+#footer .icon-guide{
+    margin-left: 80px;
+    margin-right: 20%;
+    letter-spacing: 28%;
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+#footer .image{
+    display: flex;
+    margin-left: 94px;
+    margin-right: 10%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .image img{
+    margin-right: 20px;
+
+}
+
+#footer .image img.fb{
+    background-color: var(--light-pink-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.ig{
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.tw{
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.tkt{
+    background-color: var(--dark-blue-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .footer-list ul{
+    display: flex;
+    white-space: nowrap;
+    margin-top: 200px;
+}
+
+#footer .footer-list ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 26px;
+    list-style-type: initial;
+}
+
+#footer .footer-list .none{
+    list-style: none;
 }
