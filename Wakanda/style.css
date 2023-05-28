@@ -42,6 +42,15 @@ body{
     font-weight: 300;
 }
 
+h2{
+    font-family: 'Beyno';
+    font-size: 32px;
+    color: var(--grey-color);
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
 p{
     text-align: justify;
     font-family: 'Cantarell';
@@ -133,6 +142,8 @@ nav ul a:hover{
     padding-left: 40px;
 }
 
+
+
 #origine2 .container{
     display: flex;
 }
@@ -144,6 +155,9 @@ nav ul a:hover{
 #origine2 .container .second{
     padding-left: 40px;
 }
+
+
+
 
 
 /* Style pour la partie footer */
