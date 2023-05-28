@@ -1,0 +1,224 @@
+/*  Import du typographie Wakanda  */
+@font-face {
+    font-family: 'Wakanda';
+    src: url('../Assets/typographie/Wakanda/WakandaForever-Regular.ttf') format('ttf');
+}
+
+/* Import du typographie Cantarell*/
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+
+/* Import du typographie Panthera */
+@font-face {
+    font-family: 'Panthera';
+    src: url('../Assets/typographie/Panthera/PantheraRegular-MVZ9J.ttf') format('ttf');
+}
+
+/* Import du typographie Beyno */
+@font-face {
+    font-family: 'Beyno';
+    src: url('../Assets/typographie/BEYNO/BEYNO.ttf') format('ttf')
+}
+
+:root{
+    --white-color: #FFFFFF;
+    --light-pink-color: #F2CEF2;
+    --grey-color: #9E91B7;
+    --pink-color: #DF99F2;
+    --blue-color: #3D2DA6;
+    --dark-blue-color: #07338C;
+    --black-color: #021740;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-family: 'Cantarell';
+    font-weight: 300;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Cantarell';
+    font-size: 16px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Style pour la navigation */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul a{
+    font-family: 'Beyno';
+    margin-right: 40px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+nav ul a:hover{
+    text-decoration: underline;
+    color: var(--grey-color);
+}
+
+/* Style pour la section Wakanda forever */
+#wakanda{
+    background-image: url(../Assets/Wakanda-img/Pantherwakanda1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 800px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#wakanda .wakanda-forever h1{
+    font-family: 'Beyno';
+    font-size: 68px;
+    font-weight: 300;
+    color: var(--grey-color);
+    margin-top: 320px;
+}
+
+#wakanda .wakanda-forever h2{
+    font-family: 'Wakanda';
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--grey-color);
+    margin-bottom: 62px;
+}
+
+/* Style pour la section origine */
+#origine{
+    background-image: url(../Assets/Wakanda-img/Pantherwakanda2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 800px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#origine .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 180px;
+}
+
+#origine .container .first{
+    padding-right: 40px;
+}
+
+#origine .container .second{
+    padding-left: 40px;
+}
+
+
+/* Style pour la partie footer */
+#footer .container{
+    display: flex;
+    margin: 60px auto 50px;
+}
+
+#footer .img-buble{
+    margin-right: 100px;
+}
+
+#footer .info{
+    margin-right: 40px;
+}
+
+#footer .page{
+    letter-spacing: 28%;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+#footer .apropos, .wakanda{
+    margin: 6px auto;
+}
+
+#footer .footer-content{
+    display: flex;
+}
+
+#footer .icon-guide{
+    margin-left: 80px;
+    margin-right: 20%;
+    letter-spacing: 28%;
+    white-space: nowrap;
+    font-size: 22px;
+}
+
+#footer .image{
+    display: flex;
+    margin-left: 94px;
+    margin-right: 10%;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .image img{
+    margin-right: 20px;
+
+}
+
+#footer .image img.fb{
+    background-color: var(--light-pink-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.ig{
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.tw{
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .image img.tkt{
+    background-color: var(--dark-blue-color);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#footer .footer-list ul{
+    display: flex;
+    white-space: nowrap;
+    margin-top: 200px;
+}
+
+#footer .footer-list ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 26px;
+    list-style-type: initial;
+}
+
+#footer .footer-list .none{
+    list-style: none;
+}
